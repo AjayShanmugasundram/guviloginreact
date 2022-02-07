@@ -7,12 +7,9 @@ import Studentlogin from './Component/Studentlogin';
 import {
   BrowserRouter,
   Route,
-  Link,
-  Routes,
-  Outlet,
-  useLocation,
-  useParams,
-  useNavigate,
+  
+  Routes
+
 } from "react-router-dom";
 
 
