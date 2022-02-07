@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./Component/About";
+import Adminlogin from './Component/Adminlogin';
+import Braches from "./Component/Braches";
+import Contact from './Component/Contact';
+import DashBoard from "./Component/DashBoard";
+import Studentlogin from './Component/Studentlogin';
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Routes,
+  Outlet,
+  useLocation,
+  useParams,
+  useNavigate,
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<DashBoard/>}></Route>
+      <Route path="/AdminLogin" element={<Adminlogin/>}></Route>
+      <Route path="/StudentLogin" element={<Studentlogin/>}></Route>
+      <Route path="/About" element={<About/>}></Route>
+      <Route path="/Braches" element={<Braches/>}></Route>
+      <Route path="/Contact" element={<Contact/>}></Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
