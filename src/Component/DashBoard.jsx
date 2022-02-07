@@ -16,14 +16,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Container from "@mui/material/Container";
 import {
-  BrowserRouter,
-  Route,
-  Link,
-  Routes,
-  Outlet,
-  useLocation,
-  useParams,
-  useNavigate,
+  Link
 } from "react-router-dom";
 
 export default function DashBoard() {
